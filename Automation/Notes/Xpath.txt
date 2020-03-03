@@ -1,0 +1,75 @@
+
+
+
+
+
+
+                                          XPATH
+------------------------------------------------------------------------------------------------------
+Syntax 1-->//tagName[@attribute='attributeValue']
+
+Example--->//input[@name='firstName']
+
+------------------------------------------------------------------------------------------------------
+Syntax 2-->//tagName[@attribute='value'][@attribute='attributeValue']
+
+Example--->//input[@name='username'][@id='userName']----------->AND CONDITION
+
+------------------------------------------------------------------------------------------------------
+
+-----<For automating text in HTML>-----
+
+Syntax 3-->//tagName[text()='attributeValue']
+
+Example--->//a[text()='REGISTER']
+
+------------------------------------------------------------------------------------------------------
+
+-----<CONTAINS>-----
+
+Syntax 4.0--> //tagName[contains(@attribute,'attributeValue')]
+
+       4.1-->//tagName[contains(text(),'attributeValue')]
+	
+
+Example for  4.1---->//button[contains(text(),'Register')]------> FOR TEXT ELEMENT
+
+Example for  4.0---->//input[contains(@name,'userName')]------> FOR NORMAL ELEMENT
+
+------------------------------------------------------------------------------------------------------
+
+-----<Starts-with>-----
+
+Syntax 5.0--> //tagName[starts-with(@attribute,'attributeValue')]
+
+       5.1-->//tagName[starts-with(text(),'attributeValue')]
+
+
+Example for  5.1---->//button[starts-with(text(),'Register')]------> FOR TEXT ELEMENT
+
+Example for  5.0---->//input[starts-with(@name,'userName')]------> FOR NORMAL ELEMENT
+
+
+------------------------------------------------------------------------------------------------------
+
+
+-------<INDEX-BASES-XPATH>------NOTE: WE CAN USE THIS APPROACH WHEN TEHRE ARE MULTIPLE SIMILAR ELEMENTS 
+
+Syntax 6---->  (//tagName[@attribute='attributeValue'])[Index]
+
+Example ---->  (//tagName[@name='firstName'])[4]
+
+
+------------------------------------------------------------------------------------------------------
+
+-------<FOLLOWING>------AND-------<PRECEDING>------
+
+
+Example 7 ----> //tagName[@attribute='attributeValue']/following::*[index]    ------>GO DOWNWARD DIRECTION
+
+Example 8 ----> //tagName[@attribute='attributeValue']/preceding::*[index]    ------>GO UPWARD DIRECTION
+
+
+
+
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sample suite]">
+  <test thread-count="5" name="Learning Jenkins(failed)">
+    <classes>
+      <class name="Selenium.Automation.scrollDown">
+        <methods>
+          <include name="harshab"/>
+          <include name="harsha"/>
+          <include name="Scroll"/>
+          <include name="DriverInitialization"/>
+        </methods>
+      </class> <!-- Selenium.Automation.scrollDown -->
+    </classes>
+  </test> <!-- Learning Jenkins(failed) -->
+</suite> <!-- Failed suite [Sample suite] -->
