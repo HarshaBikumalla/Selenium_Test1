@@ -42,7 +42,7 @@ public class scrollDown
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		String title = driver.getTitle();
 		System.out.println(title);
-		driver.findElement(By.xpath("//span[@class='ezmob-footer-cl##ose']")).click();
+		//driver.findElement(By.xpath("//span[@class='ezmob-footer-close']")).click();
 		/*
 		 * JavascriptExecutor js=(JavascriptExecutor) driver;
 		 * 
